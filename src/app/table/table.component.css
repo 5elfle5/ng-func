@@ -1,0 +1,30 @@
+table {
+    font-family: Lato;
+  }
+  
+  td, th {
+    padding: 10px 15px;
+    min-width: 50px;
+  }
+  
+  th {
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  tr {
+    background: #eee;
+  }
+  
+  th.sort-asc::after {
+    content: '▼';
+  }
+  
+  th.sort-desc::after {
+    content: '▲';
+  }
+  th.sort-asc::after, th.sort-desc::after {
+    font-size: 12px;
+    padding-left: 5px;
+  }
